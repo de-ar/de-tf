@@ -83,9 +83,9 @@ locals {
 
   # Freeform tags applied to every Always-Free resource. Drives cost-tracking
   # queries in the OCI Console (e.g. "show me all resources with
-  # AlwaysFree=true tagged on tag Module=de-ar/always-free").
+  # AlwaysFree=true tagged on tag Module=de-ar/oracle-forever-free").
   common_tags = {
     "AlwaysFree" = "true"
-    "Module"     = "de-ar/always-free"
+    "Module"     = "de-ar/oracle-forever-free"
   }
 }

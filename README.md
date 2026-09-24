@@ -283,7 +283,7 @@ outputs.tf       instance_public_ips map
 AGENTS.md        deeper gotchas, debugging history, conventions
 ```
 
-Every resource carries two freeform tags: `AlwaysFree = "true"` and `Module = "de-ar/always-free"`. Query them in the Console (`Tag Search` → `AlwaysFree:true`) to see every resource this module manages.
+Every resource carries two freeform tags: `AlwaysFree = "true"` and `Module = "de-ar/oracle-forever-free"`. Query them in the Console (`Tag Search` → `AlwaysFree:true`) to see every resource this module manages.
 
 ---
 

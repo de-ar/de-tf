@@ -58,7 +58,7 @@ terraform output -json > outputs.json   # capture public IP / OCID
 
 ## Conventions
 - Resource addresses are role-based, no `de_` prefix: `oci_core_virtual_network.main`, `oci_core_internet_gateway.main`, `oci_core_route_table.public`, `oci_core_security_list.public`, `oci_core_subnet.public`, `oci_core_instance.micro`. (Same local name across different resource types is fine; the full address includes the type.)
-- Freeform tags applied to every Always-Free resource via `local.common_tags`: `AlwaysFree = "true"` and `Module = "de-ar/always-free"` for cost-tracking queries.
+- Freeform tags applied to every Always-Free resource via `local.common_tags`: `AlwaysFree = "true"` and `Module = "de-ar/oracle-forever-free"` for cost-tracking queries.
 - `display_name` matches the resource local name (no underscores): `main`, `public`. For counted resources, append `count.index + 1` (so the E2 micros are `micro-1`, `micro-2`).
 - `description` is set on every variable and output (Terraform-native). The `oracle/oci` provider v6 does not expose `description` as a top-level argument on core compute/network resources or data sources, so resource/data purpose is documented in a leading `#` comment block instead.
 
